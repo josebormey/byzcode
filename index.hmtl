@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba sencilla con jQuery</title>
+  <!-- Incluimos jQuery desde CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #mensaje {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: darkblue;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi primera prueba en GitHub Pages</h1>
+  <button id="btnSaludo">Haz clic aquí</button>
+  <div id="mensaje"></div>
+
+  <script>
+    $(document).ready(function(){
+      $("#btnSaludo").click(function(){
+        $("#mensaje").text("¡Hola Jose! Esto funciona con jQuery 🎉");
+      });
+    });
+  </script>
+</body>
+</html>
